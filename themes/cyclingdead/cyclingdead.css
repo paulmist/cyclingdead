@@ -1,0 +1,11 @@
+@import "normalize.css";
+
+.wrapper{
+	width: 100%;
+	background: #eee;
+}
+.header{
+	width: 100%;
+	background: #444;
+	color: #fff;
+}

@@ -1,19 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-	<meta charset="UTF-8" />
-	<title>New Website</title>
-	<meta name="description" content="" />
-	<meta name="keywords" value="" />
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
-	<script src="js/lib/modernizr-1.5.min.js"> </script>
-</head>
-<body>
-
-	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script>!window.jQuery && document.write('<script src="js/lib/jquery-1.4.2.min.js"><\/script>')</script>
-	<script src="js/site.js"></script>
-</body>
+<html lang="en-au" class="tumblrthemr-start">
+  <head>
+    <title>Tumblr Yo</title>
+    <link rel="stylesheet" href="app/stylesheets/tumblrthemr.css?v=1" type="text/css" media="screen"/>
+  </head>
+  <body>
+    <div id="tumblrthemr-target">
+      <!-- Repeated in intro.tumblr -->
+      <div id="tumblrthemr-intro">Set your configuration</div>
+    </div>
+    <div id="tumblrthemr-loading">Loading</div>
+    <form id="tumblrthemr-config">
+      <div id="tumblrthemr-error"></div>
+      <label id="tumblrthemr-label-url">
+        Source URL:
+        <span>http://<input name="url" type="text" placeholder="tumblrthemr.tumblr.com" value="tumblrthemr.tumblr.com"/></span>
+      </label>
+      <label id="tumblrthemr-label-theme">
+        Theme file:
+        <span>themes/<input name="theme" type="text" placeholder="demo" value="demo"/>.tumblr</span>
+      </label>
+      <button type="submit">Save settings</button>
+      <div id="tumblrthemr-config-hide">or <a href="#hide-config" class="tumblrthemr">cancel</a></div>
+    </form>
+    <a href="#show-config" id="tumblrthemr-config-show" class="tumblrthemr">Show config</a>
+    <script src="app/javascripts/tumblr-themr-1.0.min.js"></script>
+  </body>
 </html>
-  
