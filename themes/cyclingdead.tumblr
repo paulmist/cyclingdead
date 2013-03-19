@@ -7,7 +7,10 @@
 				{Title}
 			</a>
 		</div>
-		<div id="content">
+		<div class="content">
+		<div class="donate">
+			<a class="btn sponsor" href="">Sponsor me</a>
+		</div>
 			{block:SearchPage}
 				{block:SearchResults}
 					<div id="searchresults">{SearchResultCount} results for {SearchQuery}</div>
