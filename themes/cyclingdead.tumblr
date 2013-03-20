@@ -1,5 +1,7 @@
 {block:tumblrThemr}
-	<link rel="stylesheet" href="themes/cyclingdead/cyclingdead.css?v=1" type="text/css" media="screen"/>
+	<script type="text/javascript" src="//use.typekit.net/wyl0ecp.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<link rel="stylesheet" href="themes/cyclingdead/cyclingdead.css" type="text/css" media="screen"/>
 	<style type="text/css">{CustomCSS}</style>
 	<div class="wrapper">
 		<div class="header">
