@@ -2,15 +2,14 @@
 
 $green: #299b5d;
 
-$sans: "omnes-pro", sans-serif;
-
-*{
-	margin: 0;
-	padding: 0;
+$sans: 'Lato', sans-serif;
+body{
+	font-family: $sans;
 }
 p{
 	margin-bottom: 16px;
 	font-family: $sans;
+	font-weight: 400;
 	color: #444444;
 	line-height: 24px;
 }
@@ -32,6 +31,8 @@ img{
 
 	a,
 	a:visited{
+		font-family: $sans;
+		font-weight: 400;
 		color: #fff;
 		text-decoration: none;
 	}
@@ -41,14 +42,16 @@ img{
 	margin: 0 auto;
 }
 .post{
-	width: 90%;
-	margin: 20px 0;
-	padding: 5%;
+	//width: 90%;
+	margin: 20px 0 50px 0;
+	padding: 30px;
 	background: #fff;
+	position: relative;
 
 	box-shadow: 0 6px 0 rgba(0, 0, 0, .2);
 }
 .donate{
+	margin-bottom: 40px;
 	text-align: center;
 }
 .btn{
@@ -56,7 +59,7 @@ img{
 	background: $green;
 	font-family: $sans;
 	font-size: 36px;
-	font-weight: 100;
+	font-weight: 700;
 	color: #fff;
 	text-decoration: none;
 	line-height: 130px;	
@@ -76,14 +79,72 @@ img{
 
 }
 .title{
-	margin-bottom: 10px;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
 	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	border-bottom: 1px solid $green;
 	line-height: 30px;
 }
 .copy{
-	
+	ol,
+	ul{		
+		margin: 0;
+		li{
+			padding-left: 20px;
+			margin-bottom: 16px;
+			list-style-type: none;
+		}
+	}
+	blockquote{
+		font-style: italic;
+		margin: 0;
+	}
+	a,
+	a:visited{
+		color: $green;
+		text-decoration: none;
+		border-bottom: 1px dotted $green;
+		&:hover{
+			color: darken($green, 10%);
+			border-bottom: 1px solid darken($green, 10%);
+		}
+	}
+
 }
 .footer{
 	font-size: 12px;
 	line-height: 18px;
+}
+.post-date{
+	width: 50px;
+	height: 50px;
+	//margin: 0 10px 10px 0;
+	margin: -50px auto 20px auto;
+	background: #eee;
+	overflow: hidden;
+	//float:left;
+
+	border-radius: 4px;
+	box-shadow: 0 3px 0 rgba(0, 0, 0, .2);
+	//box-shadow: 0 2px 2px 1px rgba(0, 0, 0, .1);
+
+	.post-date-month{
+		font-size: 12px;
+		text-align: center;
+		line-height: 20px;
+		//background: #eee;
+	}
+	.post-date-day{
+		background: $green;
+		color: #fff;
+		font-size: 20px;
+		font-family: $sans;
+		font-weight: 400;
+		text-align: center;
+		line-height: 30px;
+
+		box-shadow: inset 0 -2px 0 darken($green, 5%);
+	}
 }
